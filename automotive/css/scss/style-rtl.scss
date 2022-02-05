@@ -1,0 +1,24 @@
+// compileCompressed: ../$1.css
+$left: right;
+$right: left;
+
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+@import "style";
+
+.rtl {
+  .blog-content {
+    ul li {
+      &:before {
+        float: right;
+      }
+    }
+
+    .post-entry ul.social-likes {
+      padding-right: 0;
+    }
+  }
+}

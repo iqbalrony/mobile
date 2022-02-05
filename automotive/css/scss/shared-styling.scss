@@ -1,0 +1,28 @@
+// compileCompressed: ../$1.css
+$left: left !default;
+$right: right !default;
+
+.back_to_top {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    #{$right}: 50px;
+    bottom: 50px;
+    padding-top: 6px;
+    display: none;
+    z-index: 999;
+    transition-duration: .2s;
+    transition-property: background-color;
+
+    &:hover {
+        background-color: #c7081b;
+    }
+}
+
+.print_friendly {
+  display: none;
+}
